@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошачий уголок - Меню</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Логотип Кошачий уголок" class="site-logo">
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="about.html" class="nav-link">О нас</a></li>
+                <li><a href="cats.html" class="nav-link">Коты</a></li>
+                <li><a href="menu.html" class="nav-link active">Меню</a></li>
+                <li><a href="events.html" class="nav-link">События</a></li>
+                <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1>Наше меню</h1>
+                    <p>Вкусные напитки и угощения для людей и котов</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-categories">
+            <div class="container">
+                <nav class="menu-nav">
+                    <button class="menu-tab active" data-category="coffee">
+                        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                            <line x1="6" y1="1" x2="6" y2="4"/>
+                            <line x1="10" y1="1" x2="10" y2="4"/>
+                            <line x1="14" y1="1" x2="14" y2="4"/>
+                        </svg>
+                        Кофе и напитки
+                    </button>
+                    <button class="menu-tab" data-category="food">
+                        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        Еда и закуски
+                    </button>
+                    <button class="menu-tab" data-category="cat-treats">
+                        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                        </svg>
+                        Лакомства для котов
+                    </button>
+                </nav>
+
+                <div class="menu-content">
+                    <section class="menu-category active" id="coffee">
+                        <div class="section-header">
+                            <h2>Кофе и напитки</h2>
+                            <p class="section-subtitle">Напитки, приготовленные с душой</p>
+                        </div>
+                        <div class="menu-grid">
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Эспрессо "Мурлыка"</h3>
+                                    <p>Крепкий насыщенный эспрессо из фирменной смеси</p>
+                                </div>
+                                <span class="price">180 ₽</span>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Капучино "Усатик"</h3>
+                                    <p>Нежный капучино с красивым латте-арт</p>
+                                </div>
+                                <span class="price">240 ₽</span>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Мокко "Мяу"</h3>
+                                    <p>Шоколад и кофе со взбитыми сливками</p>
+                                </div>
+                                <span class="price">260 ₽</span>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Карамельный маккиато "Кот-карамель"</h3>
+                                    <p>Сладкий карамельный эспрессо с молоком</p>
+                                </div>
+                                <span class="price">270 ₽</span>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Чай латте "Лапка"</h3>
+                                    <p>Пряный чай с молоком и корицей</p>
+                                </div>
+                                <span class="price">220 ₽</span>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Зелёный чай "Табби"</h3>
+                                    <p>Премиальный зелёный чай с мёдом и лимоном</p>
+                                </div>
+                                <span class="price">190 ₽</span>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="menu-category" id="food">
+                        <div class="section-header">
+                            <h2>Еда и закуски</h2>
+                            <p class="section-subtitle">Свежие и вкусные блюда к вашему напитку</p>
+                        </div>
+                        <div class="menu-grid">
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Круассан "Котик"</h3>
+                                    <p>Сливочный круассан с начинкой на выбор</p>
+                                </div>
+                                <span class="price">350 ₽</span>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Фокачча "Кошачья"</h3>
+                                    <p>Свежая фокачча с травами и томатами</p>
+                                </div>
+                                <span class="price">390 ₽</span>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Панини "Пушистик"</h3>
+                                    <p>Горячий панини с ветчиной, сыром и овощами</p>
+                                </div>
+                                <span class="price">470 ₽</span>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Пирожное "Кот-кейк"</h3>
+                                    <p>Домашние пирожные и выпечка дня</p>
+                                </div>
+                                <span class="price">260 ₽</span>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Печенье "Усы"</h3>
+                                    <p>Свежая выпечка — с шоколадом или овсяное</p>
+                                </div>
+                                <span class="price">150 ₽</span>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Маффин "Мяуффин"</h3>
+                                    <p>Маффины дня — черничный, банановый или шоколадный</p>
+                                </div>
+                                <span class="price">190 ₽</span>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="menu-category" id="cat-treats">
+                        <div class="section-header">
+                            <h2>Лакомства для котов</h2>
+                            <p class="section-subtitle">Особые угощения для наших пушистых друзей</p>
+                        </div>
+                        <div class="menu-grid">
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Лососёвые кусочки</h3>
+                                    <p>Премиальные лакомства из лосося</p>
+                                </div>
+                                <span class="price">200 ₽</span>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Куриные хрустики</h3>
+                                    <p>Хрустящие лакомства со вкусом курицы</p>
+                                </div>
+                                <span class="price">160 ₽</span>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Тунецовые радости</h3>
+                                    <p>Мягкие лакомства с тунцом</p>
+                                </div>
+                                <span class="price">180 ₽</span>
+                            </article>
+                            <article class="menu-item">
+                                <div class="menu-item-info">
+                                    <h3>Печенье с кошачьей мятой</h3>
+                                    <p>Особые угощения с кошачьей мятой для игр</p>
+                                </div>
+                                <span class="price">140 ₽</span>
+                            </article>
+                        </div>
+                        <div class="cat-treats-note">
+                            <p><strong>Внимание:</strong> Лакомства предназначены только для котов кафе и не выдаются на вынос</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="img/logo.png" alt="Логотип Кошачий уголок" class="site-logo">
+                        </a>
+                        <p>Где каждый кофе с мурлыканьем</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="cats.html">Усыновить кота</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="events.html">События</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="contact-info">
+                        <p><span class="contact-icon">📍</span> ул. Кошачья, 123, г. Муррск</p>
+                        <p><span class="contact-icon">📞</span> (555) 123-КОТЫ</p>
+                        <p><span class="contact-icon">✉️</span> hello@catcorner.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">ВКонтакте</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Кошачий уголок. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

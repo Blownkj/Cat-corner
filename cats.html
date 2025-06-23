@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошачий уголок - Коты для усыновления</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Логотип Кошачий уголок" class="site-logo">
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="about.html" class="nav-link">О нас</a></li>
+                <li><a href="cats.html" class="nav-link active">Коты</a></li>
+                <li><a href="menu.html" class="nav-link">Меню</a></li>
+                <li><a href="events.html" class="nav-link">События</a></li>
+                <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1>Коты для усыновления</h1>
+                    <p>Найдите своего идеального пушистого друга</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cats-filter">
+            <div class="container">
+                <div class="filter-container">
+                    <h3>Фильтр по возрасту</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Все коты</button>
+                        <button class="filter-btn" data-filter="kitten">Котята</button>
+                        <button class="filter-btn" data-filter="adult">Взрослые</button>
+                        <button class="filter-btn" data-filter="senior">Пожилые</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cats-gallery">
+            <div class="container">
+                <div class="cats-grid" id="cats-grid">
+                    <article class="cat-card" data-age="adult">
+                        <div class="cat-image">
+                            <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Усатик">
+                            <div class="cat-overlay">
+                                <button class="cat-btn adopt-btn">Узнать об усыновлении</button>
+                            </div>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Усатик</h3>
+                            <p>Игривый котик, который любит играть и обниматься. Очень общительный и ладит с другими котами.</p>
+                            <div class="cat-details">
+                                <span class="cat-age">2 года</span>
+                                <span class="cat-gender">Мальчик</span>
+                                <span class="cat-breed">Светлый</span>
+                            </div>
+                            <div class="cat-status-container">
+                                <span class="cat-status available">Доступен</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cat-card" data-age="adult">
+                        <div class="cat-image">
+                            <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Луна">
+                            <div class="cat-overlay">
+                                <button class="cat-btn adopt-btn">Узнать об усыновлении</button>
+                            </div>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Луна</h3>
+                            <p>Ласковая рыжая кошка с оранжевыми глазами. Спокойная, любит тихо сидеть у окна.</p>
+                            <div class="cat-details">
+                                <span class="cat-age">3 года</span>
+                                <span class="cat-gender">Девочка</span>
+                                <span class="cat-breed">Короткошёрстная</span>
+                            </div>
+                            <div class="cat-status-container">
+                                <span class="cat-status available">Доступна</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cat-card" data-age="kitten">
+                        <div class="cat-image">
+                            <img src="https://images.pexels.com/photos/320014/pexels-photo-320014.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Варежка">
+                            <div class="cat-overlay">
+                                <button class="cat-btn adopt-btn">Узнать об усыновлении</button>
+                            </div>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Варежка</h3>
+                            <p>Энергичный светлый котёнок, любит играть и исследовать. Идеален для активной семьи.</p>
+                            <div class="cat-details">
+                                <span class="cat-age">8 месяцев</span>
+                                <span class="cat-gender">Мальчик</span>
+                                <span class="cat-breed">Светлый</span>
+                            </div>
+                            <div class="cat-status-container">
+                                <span class="cat-status available">Доступен</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cat-card" data-age="kitten">
+                        <div class="cat-image">
+                            <img src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Тень">
+                            <div class="cat-overlay">
+                                <button class="cat-btn adopt-btn">Узнать об усыновлении</button>
+                            </div>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Тень</h3>
+                            <p>Маленький котенок, любит спокойствие и ласку. Идеален для тихого дома.</p>
+                            <div class="cat-details">
+                                <span class="cat-age">3 месяца</span>
+                                <span class="cat-gender">Мальчик</span>
+                                <span class="cat-breed">Пятнистый</span>
+                            </div>
+                            <div class="cat-status-container">
+                                <span class="cat-status available">Доступен</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cat-card" data-age="kitten">
+                        <div class="cat-image">
+                            <img src="https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Белка">
+                            <div class="cat-overlay">
+                                <button class="cat-btn adopt-btn">Узнать об усыновлении</button>
+                            </div>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Белка</h3>
+                            <p>Красивая серая кошка с добрым характером. Любит внимание и ласку.</p>
+                            <div class="cat-details">
+                                <span class="cat-age">4 месяца</span>
+                                <span class="cat-gender">Девочка</span>
+                                <span class="cat-breed">Калико</span>
+                            </div>
+                            <div class="cat-status-container">
+                                <span class="cat-status available">Доступна</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="cat-card" data-age="kitten">
+                        <div class="cat-image">
+                            <img src="https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Тигрёнок">
+                            <div class="cat-overlay">
+                                <button class="cat-btn adopt-btn">Узнать об усыновлении</button>
+                            </div>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Тигрёнок</h3>
+                            <p>Полосатый котёнок, полный энергии и любопытства. Любит играть с перышками.</p>
+                            <div class="cat-details">
+                                <span class="cat-age">6 месяцев</span>
+                                <span class="cat-gender">Мальчик</span>
+                                <span class="cat-breed">Полосатик</span>
+                            </div>
+                            <div class="cat-status-container">
+                                <span class="cat-status available">Доступен</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="adoption-info">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Процесс усыновления</h2>
+                    <p class="section-subtitle">Простые шаги к новому члену семьи</p>
+                </div>
+                <div class="adoption-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Посетите и познакомьтесь</h3>
+                            <p>Приходите в наше кафе и пообщайтесь с котами, чтобы найти своего любимца</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Заявка</h3>
+                            <p>Заполните анкету на усыновление с вашими данными и пожеланиями</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Беседа</h3>
+                            <p>Краткая беседа с нашим координатором по усыновлению для лучшего знакомства</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Заберите домой</h3>
+                            <p>Оформите документы и заберите нового друга домой</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="img/logo.png" alt="Логотип Кошачий уголок" class="site-logo">
+                        </a>
+                        <p>Где каждый кофе с мурлыканьем</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="cats.html">Усыновить кота</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="events.html">События</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="contact-info">
+                        <p><span class="contact-icon">📍</span> ул. Кошачья, 123, г. Муррск</p>
+                        <p><span class="contact-icon">📞</span> (555) 123-КОТЫ</p>
+                        <p><span class="contact-icon">✉️</span> hello@catcorner.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">ВКонтакте</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Кошачий уголок. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

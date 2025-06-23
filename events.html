@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошачий уголок - События</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Логотип Кошачий уголок" class="site-logo">
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="about.html" class="nav-link">О нас</a></li>
+                <li><a href="cats.html" class="nav-link">Коты</a></li>
+                <li><a href="menu.html" class="nav-link">Меню</a></li>
+                <li><a href="events.html" class="nav-link active">События</a></li>
+                <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1>Ближайшие события</h1>
+                    <p>Присоединяйтесь к нашим мероприятиям и активностям</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="events">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Избранные события</h2>
+                    <p class="section-subtitle">Не пропустите особые мероприятия в Кошачьем уголке</p>
+                </div>
+                <div class="events-grid">
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="month">FEB</span>
+                            <span class="day">15</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Йога с котами</h3>
+                            <p>Расслабьтесь и потянитесь вместе с нашими дружелюбными котами. Для всех уровней!</p>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <span>10:00 – 11:30</span>
+                                </div>
+                                <div class="event-detail">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <line x1="12" y1="1" x2="12" y2="23"/>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    </svg>
+                                    <span>800 ₽ с человека</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">Записаться</button>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="month">FEB</span>
+                            <span class="day">22</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>День усыновления</h3>
+                            <p>Познакомьтесь со всеми нашими котами и получите скидку на усыновление!</p>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <span>12:00 – 16:00</span>
+                                </div>
+                                <div class="event-detail">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                    <span>Вход свободный</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-secondary">Подробнее</button>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="month">MAR</span>
+                            <span class="day">01</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Кофейный мастер-класс</h3>
+                            <p>Узнайте о разных вкусах кофе в компании котов.</p>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <span>14:00 – 15:30</span>
+                                </div>
+                                <div class="event-detail">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <line x1="12" y1="1" x2="12" y2="23"/>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    </svg>
+                                    <span>1000 ₽ с человека</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">Записаться</button>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="month">MAR</span>
+                            <span class="day">08</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Мастер-класс по уходу за котами</h3>
+                            <p>Узнайте важные советы по уходу за котами от нашего специалиста.</p>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <span>11:00 – 12:30</span>
+                                </div>
+                                <div class="event-detail">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <line x1="12" y1="1" x2="12" y2="23"/>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    </svg>
+                                    <span>700 ₽ с человека</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">Записаться</button>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="month">MAR</span>
+                            <span class="day">15</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Час чтения для детей и котов</h3>
+                            <p>Дети могут читать нашим ласковым котам в спокойной обстановке.</p>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <span>16:00 – 17:00</span>
+                                </div>
+                                <div class="event-detail">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <line x1="12" y1="1" x2="12" y2="23"/>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    </svg>
+                                    <span>600 ₽ за ребёнка</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">Записаться</button>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="month">MAR</span>
+                            <span class="day">22</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Мастер-класс по латте-арту</h3>
+                            <p>Научитесь создавать красивый латте-арт в компании мурлыкающих друзей.</p>
+                            <div class="event-details">
+                                <div class="event-detail">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                    <span>13:00 – 15:00</span>
+                                </div>
+                                <div class="event-detail">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <line x1="12" y1="1" x2="12" y2="23"/>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    </svg>
+                                    <span>1200 ₽ с человека</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">Записаться</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="regular-activities">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Регулярные активности</h2>
+                    <p class="section-subtitle">Еженедельные мероприятия, на которые вы всегда можете рассчитывать</p>
+                </div>
+                <div class="activities-grid">
+                    <div class="activity-card">
+                        <div class="activity-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                                <line x1="6" y1="1" x2="6" y2="4"/>
+                                <line x1="10" y1="1" x2="10" y2="4"/>
+                                <line x1="14" y1="1" x2="14" y2="4"/>
+                            </svg>
+                        </div>
+                        <h3>Счастливые часы</h3>
+                        <p>Скидки на напитки и закуски</p>
+                        <span class="activity-time">Пн–Пт, 15:00–17:00</span>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                        </div>
+                        <h3>Тихие часы для учёбы</h3>
+                        <p>Время для спокойной учёбы с котами</p>
+                        <span class="activity-time">Вт и Чт, 9:00–12:00</span>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </div>
+                        <h3>День скидок для пенсионеров</h3>
+                        <p>Скидка 20% для гостей от 65 лет</p>
+                        <span class="activity-time">Среда, весь день</span>
+                    </div>
+                    <div class="activity-card">
+                        <div class="activity-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                            </svg>
+                        </div>
+                        <h3>Время кормления котов</h3>
+                        <p>Посмотрите, как наши коты наслаждаются едой</p>
+                        <span class="activity-time">Каждый день: 8:00, 13:00, 18:00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="event-booking">
+            <div class="container">
+                <div class="booking-content">
+                    <div class="section-header">
+                        <h2>Аренда для частных мероприятий</h2>
+                        <p class="section-subtitle">Проведите свой праздник у нас</p>
+                    </div>
+                    <p>Хотите провести день рождения или корпоратив? Мы предлагаем аренду зала для особых случаев!</p>
+                    <div class="booking-features">
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V4a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
+                                </svg>
+                                <span>Дни рождения и праздники</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <span>Корпоративные мероприятия</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <span>Частные групповые занятия</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                </svg>
+                                <span>Образовательные экскурсии для школ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contacts.html" class="btn btn-primary">Связаться для бронирования</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="img/logo.png" alt="Логотип Кошачий уголок" class="site-logo">
+                        </a>
+                        <p>Где каждый кофе с мурлыканьем</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="cats.html">Усыновить кота</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="events.html">События</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="contact-info">
+                        <p><span class="contact-icon">📍</span> ул. Кошачья, 123, г. Муррск</p>
+                        <p><span class="contact-icon">📞</span> (555) 123-КОТЫ</p>
+                        <p><span class="contact-icon">✉️</span> hello@catcorner.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">ВКонтакте</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Кошачий уголок. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

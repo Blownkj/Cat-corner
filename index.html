@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Corner - Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html" class="logo-link">
+                    <img src="img/logo.png" alt="Логотип Кошачий уголок" class="site-logo">
+                </a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active">Главная</a></li>
+                <li><a href="about.html" class="nav-link">О нас</a></li>
+                <li><a href="cats.html" class="nav-link">Коты</a></li>
+                <li><a href="menu.html" class="nav-link">Меню</a></li>
+                <li><a href="events.html" class="nav-link">События</a></li>
+                <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Добро пожаловать в Кошачий уголок</h1>
+                    <p class="hero-subtitle">Где кофе встречается с мурлыканьем, а каждый визит — как дома</p>
+                    <div class="hero-buttons">
+                        <a href="cats.html" class="btn btn-primary">
+                            <span>Познакомиться с нашими котами</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="menu.html" class="btn btn-secondary">
+                            <span>Посмотреть меню</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/1741205/pexels-photo-1741205.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cat in cafe">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Почему выбирают Кошачий уголок?</h2>
+                    <p class="section-subtitle">Идеальное сочетание отличного кофе и кошачьей компании</p>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                                <line x1="6" y1="1" x2="6" y2="4"/>
+                                <line x1="10" y1="1" x2="10" y2="4"/>
+                                <line x1="14" y1="1" x2="14" y2="4"/>
+                            </svg>
+                        </div>
+                        <h3>Премиальный кофе</h3>
+                        <p>Свежообжаренные зерна и напитки, приготовленные с любовью и мастерством</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                                <line x1="15" y1="9" x2="15.01" y2="9"/>
+                            </svg>
+                        </div>
+                        <h3>Коты для усыновления</h3>
+                        <p>Найдите своего идеального пушистого друга в уютной атмосфере нашего кафе</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9,22 9,12 15,12 15,22"/>
+                            </svg>
+                        </div>
+                        <h3>Уютная атмосфера</h3>
+                        <p>Теплое и гостеприимное пространство для отдыха, работы или встреч с друзьями</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-cats">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Наши коты</h2>
+                    <p class="section-subtitle">Познакомьтесь с нашими очаровательными жителями, ищущими дом</p>
+                </div>
+                <div class="cats-grid">
+                    <article class="cat-card">
+                        <div class="cat-image">
+                            <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Усатик">
+                            <div class="cat-overlay">
+                                <button class="cat-btn">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Усатик</h3>
+                            <p>Игривый светлый кот в поисках любящей семьи</p>
+                            <div class="cat-details">
+                                <span class="cat-age">2 года</span>
+                                <span class="cat-status available">Доступен</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cat-card">
+                        <div class="cat-image">
+                            <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Луна">
+                            <div class="cat-overlay">
+                                <button class="cat-btn">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Луна</h3>
+                            <p>Ласковая рыжая    кошка, обожает обниматься</p>
+                            <div class="cat-details">
+                                <span class="cat-age">3 года</span>
+                                <span class="cat-status available">Доступна</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cat-card">
+                        <div class="cat-image">
+                            <img src="https://images.pexels.com/photos/320014/pexels-photo-320014.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Варежка">
+                            <div class="cat-overlay">
+                                <button class="cat-btn">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="cat-info">
+                            <h3>Варежка</h3>
+                            <p>Светлый кот с ярким характером</p>
+                            <div class="cat-details">
+                                <span class="cat-age">1 год</span>
+                                <span class="cat-status available">Доступен</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="text-center">
+                    <a href="cats.html" class="btn btn-outline">
+                        <span>Смотреть всех котов</span>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Готовы посетить?</h2>
+                    <p>Приходите в Кошачий уголок — здесь каждый кофе с мурлыканьем</p>
+                    <div class="cta-buttons">
+                        <a href="contacts.html" class="btn btn-primary">Приходите к нам</a>
+                        <a href="events.html" class="btn btn-primary">Смотреть события</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="img/logo.png" alt="Логотип Кошачий уголок" class="site-logo">
+                        </a>
+                        <p>Где каждый кофе с мурлыканьем</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="cats.html">Усыновить кота</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="events.html">События</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <div class="contact-info">
+                        <p><span class="contact-icon">📍</span> ул. Кошачья, 123, г. Муррск</p>
+                        <p><span class="contact-icon">📞</span> (555) 123-КОТЫ</p>
+                        <p><span class="contact-icon">✉️</span> hello@catcorner.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">ВКонтакте</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Кошачий уголок. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
